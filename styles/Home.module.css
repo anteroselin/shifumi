@@ -1,0 +1,56 @@
+.playground {
+  width: 100%;
+
+  position: relative;
+  margin-top: 3.125rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  gap: 2rem;
+}
+
+.icon {
+  height: 200px;
+  width: 200px;
+  border-radius: 30%;
+  border-color: transparent;
+  border: 25px solid;
+  background-size: 50%;
+}
+
+.icon__paper {
+  background-image: url('../assets/images/icon-paper.svg');
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--icon--gradient);
+    box-shadow: inset 0px 5px 6px grey,
+      0px 8px darken(var(--icon--gradient), 15%);
+}
+
+.icon__rock {
+  background-image: url('../assets/images/icon-rock.svg');
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--icon--gradient);
+    box-shadow: inset 0px 5px 6px grey,
+      0px 8px darken(var(--icon--gradient), 15%);
+}
+
+.icon__scissors {
+  background-image: url('../assets/images/icon-scissors.svg');
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--icon--gradient);
+    box-shadow: inset 0px 5px 6px grey,
+      0px 8px darken(var(--icon--gradient), 15%);
+}

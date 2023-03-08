@@ -1,0 +1,109 @@
+.game {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.game__play {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.game__play__text {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+.game__play__again {
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: blue;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.game__you {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+}
+
+.game__you__text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.game__bot {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+}
+
+.game__bot__text {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+
+.counter {
+  height: 250px;
+  width: 250px;
+  border-radius: 10%;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  font-size: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.icon {
+  height: 250px;
+  width: 250px;
+  border-radius: 30%;
+  border-color: transparent;
+  border: 25px solid;
+  background-size: 50%;
+}
+
+.icon--paper {
+  background-image: url('../../assets/images/icon-paper.svg');
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--icon--gradient);
+}
+ 
+.icon--scissors {
+  background-image: url('../../assets/images/icon-scissors.svg');
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: var(--icon--gradient);
+}
+
+.icon--rock {
+  background-image: url('../../assets/images/icon-rock.svg');
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: var(--icon--gradient);
+}
+
+.icon__winner {
+  box-shadow: 0 0 0 50px hsl(0deg 0% 100% / 7%), 0 0 0 100px hsl(0deg 0% 100% / 5%), 0 0 0 150px hsl(0deg 0% 100% / 3%);
+}
